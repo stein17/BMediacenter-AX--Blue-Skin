@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "Removing BMediacenter-AX-Blue-Skin from the system ..."
+echo "Removing BMediaCenter Plugin from the system ..."
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter > /dev/null 2>&1
+rm -rf /usr/share/enigma2/skin/BMediacenter-AX-Blue-Skin > /dev/null 2>&1
+exit 0
