@@ -1,6 +1,6 @@
 #!/bin/sh
-echo "Removing BMediacenter-AX-Blue-Skin from the system ..."
-echo "Removing BMediaCenter Plugin from the system ..."
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter > /dev/null 2>&1
-rm -rf /usr/share/enigma2/skin/BMediacenter-AX-Blue-Skin > /dev/null 2>&1
-exit 0
+
+# restore BMC
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter
+tar xzf /bmc-ax-blue-skin/do_not_delete_BMCbackup.tar.gz -C /
+rm -rf /bmc-ax-blue-skin
